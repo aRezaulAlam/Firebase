@@ -12,27 +12,32 @@ import java.util.Map;
 @IgnoreExtraProperties
 public class Fruit {
 
-    private String fruitId;
+    private Long fruitId;
     private String fruitName;
-    private String taste;
-    private String location;
+    private String fruitSummary;
+    private String fruitDetails;
 
     public Fruit(){
 
     }
 
-    public Fruit(String fruitId, String fruitName, String taste, String location) {
+    public Fruit(Long fruitId, String fruitName, String fruitSummary, String fruitDetails) {
         this.fruitId = fruitId;
         this.fruitName = fruitName;
-        this.taste = taste;
-        this.location = location;
+        this.fruitSummary = fruitSummary;
+        this.fruitDetails = fruitDetails;
     }
 
-    public String getFruitId() {
+    public Fruit(String fruitName, String fruitSummary) {
+        this.fruitName = fruitName;
+        this.fruitSummary = fruitSummary;
+    }
+
+    public Long getFruitId() {
         return fruitId;
     }
 
-    public void setFruitId(String fruitId) {
+    public void setFruitId(Long fruitId) {
         this.fruitId = fruitId;
     }
 
@@ -44,30 +49,31 @@ public class Fruit {
         this.fruitName = fruitName;
     }
 
-    public String getTaste() {
-        return taste;
+    public String getFruitSummary() {
+        return fruitSummary;
     }
 
-    public void setTaste(String taste) {
-        this.taste = taste;
+    public void setFruitSummary(String fruitSummary) {
+        this.fruitSummary = fruitSummary;
     }
 
-    public String getLocation() {
-        return location;
+    public String getFruitDetails() {
+        return fruitDetails;
     }
 
-    public void setLocation(String location) {
-        this.location = location;
+    public void setFruitDetails(String fruitDetails) {
+        this.fruitDetails = fruitDetails;
     }
 
     @Exclude
-    public Map<String, Object> toMap(){
-        HashMap<String, Object> fruit = new HashMap<>();
-        fruit.put("fruitId",fruitId);
-        fruit.put("fruitname",fruitName);
-        fruit.put("taste",taste);
-        fruit.put("location",location);
+    public Map<String, Object> toMap() {
+        HashMap<String, Object> fruits = new HashMap<>();
+        fruits.put("fruitID", 1);
+        fruits.put("fruitName", fruitName);
+        fruits.put("fruitSummary", fruitSummary);
+        fruits.put("fruitDetails", "fruitDetails");
 
-        return fruit;
+
+        return fruits;
     }
 }

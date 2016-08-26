@@ -37,7 +37,6 @@ public class LagecyListMainActivity extends AppCompatActivity {
 
         fruitInput = (EditText)findViewById(R.id.fruitNameEditText);
         fruitEntryButton = (Button)findViewById(R.id.fruitSubmitButton);
-        fruitTextView = (TextView)findViewById(R.id.FruitTextView);
         fruitList = (ListView)findViewById(R.id.fruitListView);
 
     }

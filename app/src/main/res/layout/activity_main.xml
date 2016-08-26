@@ -14,35 +14,36 @@
         android:layout_height="wrap_content"
         android:id="@+id/fruitNameEditText"
         android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="54dp"
+        android:layout_toLeftOf="@+id/fruitSubmitButton"
+        android:layout_toStartOf="@+id/fruitSubmitButton" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Submit Fruit Name"
         android:id="@+id/fruitSubmitButton"
-        android:layout_below="@+id/fruitNameEditText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignBottom="@+id/fruitNameEditText"
+        android:layout_alignRight="@+id/fruitListView"
+        android:layout_alignEnd="@+id/fruitListView" />
 
     <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/fruitListView"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/fruitSubmitButton" />
+        android:layout_below="@+id/fruitNameEditText" />
 
-    <TextView
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:id="@+id/FruitTextView"
-        android:layout_alignTop="@+id/fruitSubmitButton"
-        android:layout_toRightOf="@+id/fruitSubmitButton"
-        android:layout_alignRight="@+id/fruitNameEditText"
-        android:layout_alignEnd="@+id/fruitNameEditText"
-        android:layout_alignBottom="@+id/fruitSubmitButton" />
+        android:id="@+id/editTextSummary"
+        android:layout_above="@+id/fruitSubmitButton"
+        android:layout_alignRight="@+id/fruitSubmitButton"
+        android:layout_alignEnd="@+id/fruitSubmitButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
 </RelativeLayout>
