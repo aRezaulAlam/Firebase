@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "748723749185",
+    "firebase_url": "https://fir-fruit.firebaseio.com",
+    "project_id": "fir-fruit",
+    "storage_bucket": "fir-fruit.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:748723749185:android:19fdd5a66c10659a",
+        "android_client_info": {
+          "package_name": "com.agroho.fruit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "748723749185-to66ffcq53oib787jif110asc9083pq2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.agroho.fruit",
+            "certificate_hash": "01409CC68CEB4C7BC0A9A8E22B5386DD32FB37E6"
+          }
+        },
+        {
+          "client_id": "748723749185-ag9mje362pseni4asgfpag842udrrfe8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKkR8KjIvCdLe2SGvtquE1l7LwantkWKo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "748723749185-ag9mje362pseni4asgfpag842udrrfe8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
